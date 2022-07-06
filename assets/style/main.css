@@ -1,0 +1,490 @@
+/* global style  */
+@font-face {
+    font-family: 'Tajawal';
+    src:
+        url('../fonts/Tajawal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: 
+        url('../fonts/Tajawal-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: 
+        url('../fonts/Tajawal-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: 
+        url('../fonts/Tajawal-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: 
+        url('../fonts/Tajawal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: 
+        url('../fonts/Tajawal-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: 
+        url('../fonts/Tajawal-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #F5F5F7;
+    font-family: 'Tajawal', sans-serif;
+    font-display: auto;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 64px;
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    direction: rtl;
+    text-align: right;
+}
+
+@media only screen and (max-width : 768px) {
+    .animated { all: unset; }
+}
+/* Start Navbar */
+
+.main-header nav .navbar-brand {
+    width: 90px;
+    padding: 11px;
+}
+
+.main-header nav .navbar-brand img {
+    width: 100%;
+    height: auto;
+}
+
+.main-header {
+    background-color: #fff !important;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, .25);
+    max-height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-header nav {
+    padding: 0;
+    max-height: 64px;
+}
+
+.main-header .bg-info {
+    background-color: unset !important;
+}
+
+.main-header .navbar-dark .navbar-toggler {
+    background-color: #f26725;
+}
+
+.main-header .navbar-dark .navbar-toggler i {
+    color: #fff;
+    display: block;
+    line-height: .4;
+    font-size: 16px;
+}
+
+.main-header .navbar-expand-lg .navbar-collapse ul {
+    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 16%;
+}
+
+.main-header .navbar-collapse {
+    background-color: #fff !important;
+}
+
+.main-header .navbar-dark .navbar-nav .nav-link {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.main-header .nav-item a div{
+    transition: all .25s ease-in-out;
+    text-decoration: none !important;
+    outline: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #796d6d;
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px;
+}
+.main-header .navbar-dark .navbar-nav .nav-link a {
+    transition: all .25s ease-in-out;
+    text-decoration: none !important;
+    outline: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #796d6d;
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px;
+}
+
+.main-header .nav-item a div:hover,
+.main-header .nav-item a div:focus,
+.main-header .nav-item a div:active,
+.main-header .navbar-dark .navbar-nav .nav-link a:hover,
+.main-header .navbar-dark .navbar-nav .nav-link a:focus,
+.main-header .navbar-dark .navbar-nav .nav-link a:active {
+    color: #fff;
+    background-color: #f26725;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .main-header .navbar-expand-lg .navbar-collapse ul {
+        padding-right: 0;
+    }
+}
+
+
+/* End Navbar */
+/*Start Header component  */
+
+.header-component {
+    position: relative;
+    height: calc(100vh - 64px);
+    overflow: hidden;
+    align-items: center;
+}
+
+.header-component .image {
+    position: relative;
+}
+.header-component .header-image{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 0 50px;
+}
+.header-component .content {
+        background-color: transparent;
+        color: #f26522;
+        z-index: 1;
+        width: 500px;
+        left: 5%;
+        top: 10%;
+        position: absolute;
+        border-radius: 0 7px;
+        text-align: center;
+}
+.header-component .captin-content{
+    top: 5% !important;
+    width: 600px !important;
+}
+.header-component .content h2 {
+    font-size: 40px;
+}
+
+.header-component .content P {
+    font-size: 16px;
+}
+.header-component .routeTo{
+    margin-top: 15px;
+    background-color: #f26522;
+    border: 1px solid #f26522;
+    color: #fff;
+  }
+  .header-component .routeTo:hover{
+    background-color: #F5F5F7;
+    color: #f26522;
+  }
+  .header-component .content .outline{
+    background-color: #F5F5F7 !important;
+    border: 1px solid #f26522 !important;
+    color: #f26522 !important;
+  }
+  .header-component .content .outline:hover{
+    background-color: #f26522 !important;
+    border: 1px solid #F5F5F7 !important;
+    color: #F5F5F7 !important;
+  }
+@media only screen and (max-width: 1255px) {
+    .header-component .header-image{
+        width: 85%;
+    }
+    .header-component .content {
+        background-color: #F5F5F7;
+        padding: 30px 10px;
+        width: 400px;
+    }
+    .header-component .captin-content{
+        width: 480px !important;
+    }
+    .header-component .content h2 {
+        font-size: 40px;
+    }
+    .header-component .content P {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1060px) {
+    .header-component .content {
+        width: 400px;
+    }
+    .header-component .content h2 {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 991.98px) {
+    .header-component {
+        position: none;
+        height: auto;
+        overflow: none;
+        display: block;
+        display: block;
+        align-items: center;
+    }
+    .header-component .image {
+        margin: auto;
+        width: 100%;
+        position: relative;
+        right: 0;
+    }
+    .header-component .header-image{
+        width: 100%;
+        margin: auto;
+        height: auto;
+        padding: 0;
+    }
+    .header-component .content {
+        background-color: #F5F5F7;
+        color: #f26522;
+        border: 1px solid #f26522;
+        z-index: 1;
+        width: 90% !important;
+        margin: auto;
+        position: relative;
+        padding: 25px;
+        border-radius: 7px;
+        text-align: center;
+        margin-top: 30px;
+        right: 0;
+    }
+    .header-component .content h2 {
+        font-size: 30px;
+        ;
+    }
+    .header-component .content P {
+        font-size: 14px;
+    }
+}
+/*End Header component  */
+/*Start load-app component*/
+.load-app-component {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    color: #fff;
+}
+
+.load-app-component h1 {
+    font-size: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+    .load-app-component h1 {
+        font-size: 35px;
+    }
+}
+
+.load-app-component .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-app-component .buttons a {
+    width: 250px;
+    display: flex;
+    background-color: #040606;
+    color: #fff;
+    justify-content: center;
+    padding: 5px 10px;
+    margin: 7px;
+}
+
+.load-app-component .buttons a p {
+    margin-left: 15px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.load-app-component .buttons a p span {
+    font-size: 26px;
+}
+
+.load-app-component .buttons a i {
+    font-size: 50px;
+}
+
+.load-app-component .buttons a img {
+    width: 50px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .load-app-component .buttons {
+        display: block !important;
+        margin: auto;
+    }
+}
+/*End load-app component*/
+/*Start Contact Us Component  */
+.contact-us-component {
+    padding: 30px 0;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .contact-us-component .flex-res .form-group {
+        margin: 15px 0 !important;
+    }
+}
+
+.contact-us-component .flex-res .form-group {
+    width: -webkit-fill-available;
+}
+
+.contact-us-component button {
+    background-color: #fff !important;
+    border-color: #fff;
+    box-shadow: #fff !important;
+    color: #040606;
+}
+
+.contact-us-component button:focus,
+.contact-us-component button:active,
+.contact-us-component button:hover {
+    box-shadow: 0 0 0 0.2rem rgba(242, 103, 37, 0.49) !important;
+    border-color: #fff !important;
+    color: #040606;
+}
+
+.cont {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.cont span {
+    font-weight: bold;
+}
+
+.cont p {
+    margin-right: 10px;
+}
+/*End Contact Us Component  */
+/* Start footer component  */
+.main-footer-component {
+    padding: 30px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .10);
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.main-footer-component ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.main-footer-component ul li a,
+.main-footer-component ul li div{
+    color: #f26522;
+    transition: all .5s ease-in-out;
+}
+
+.main-footer-component ul li a:hover,
+.main-footer-component ul li div:hover {
+    text-decoration: none;
+    color: #333;
+    ;
+}
+
+.main-footer-component img {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.main-footer-component .social {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-footer-component .social i {
+    margin: 10px 10px 0 10px;
+    font-size: 20px;
+    color: #796d6d;
+    transition: all .5s ease-in-out;
+}
+
+.main-footer-component .social i:hover {
+    transform: scale(1.5);
+}
+
+.main-footer-component .social .fa-pinterest-p:hover {
+    color: #E60023;
+}
+
+.main-footer-component .social .fa-instagram:hover {
+    color: #E1306C;
+}
+
+.main-footer-component .social .fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .main-footer-component img {
+        width: 100px;
+        display: block;
+    }
+    .main-footer-component {
+        position: static;
+    }
+}
+/* End footer component  */
